@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  letter-spacing: 0.05em;
+  word-spacing: 0.15em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+  font-size: calc(1rem + 2vw);
+  font-family: 'Noto Sans Mono', monospace;
+}
+p {
+  font-size: calc(0rem + 1.1vw);
+}
+.navbar-brand, .navbar-brand:hover{
+    color: #ffffff;
+}
+
+.navbar {
+  position: fixed;
+  width: -webkit-fill-available;
+  background: transparent;
+  z-index: 100;
+}
+.navbar-scrolled {
+  background: #edeff3;
+  /* padding: 10px 0; */
+  transition: all 0.5s;
+}
+.navbar > div {
+  max-width: 1200px;
+}
+.nav-link  {
+    color: #000000;
+}
+.navbar-nav .nav-link.active, .nav-link:hover {
+    color: #09297b;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-toggler {
+    color: transparent;
+}
+.navbar-toggler:hover > svg path {
+    fill: #000000;
+}
+.nav-logo {
+    display: flex;
+    /* background-color: #edeff3; */
+}
+.nav-logo > img {
+  width: 8rem;
+  height: auto;
+}
+.nav-logo > a {
+    font-size: 1.5rem;
+}
+#icons-align {
+    justify-content: end;
+}
+#icons-align > ul {
+    align-items: center;
+}
+
+#icons-align button{
+  background-color: #031272; /* Green */
+  border:none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+
+#icons-align button:hover {background-color: #1994b2}
+
+.icons {
+    width: 1.25rem;
+}
+svg path {
+    fill: #000e68;
+}
+.mav-item-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* blogger */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-cnt-section {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2em;
+    gap: 10%;
+}
+
+.content, .content-points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em ;
+}
+
+.content-points {
+    flex-direction: column;
+}
+
+@media only screen and (max-width:600px) {
+
+    .image-cnt-section {
+        width: 90%;
+    }
+    .content, .content-points {
+        width: 100%;
+    }
+}
